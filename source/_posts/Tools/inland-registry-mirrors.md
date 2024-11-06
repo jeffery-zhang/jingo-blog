@@ -29,6 +29,14 @@ npm config set registry https://registry.npmmirror.com
 npm i -g pnpm --registry=https://registry.npmmirror.com
 ```
 
+npm 设置代理
+
+```sh
+npm config set proxy http://127.0.0.1:8080
+
+npm config set https-proxy http://127.0.0.1:8080
+```
+
 ## PIP
 
 ```sh
@@ -43,6 +51,16 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple/
 
 # 中国科学技术大学
 pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple/
+```
+
+pip 设置代理
+
+```sh
+pip config set global.proxy http://127.0.0.1:8080
+
+# or
+pip config set global.http_proxy http://127.0.0.1:8080
+pip config set global.https_proxy http://127.0.0.1:8080
 ```
 
 ## Rustup
