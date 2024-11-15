@@ -1,5 +1,5 @@
 ---
-title: 国内镜像源(NPM, Cargo, Rustup)
+title: 国内镜像源(NPM, Cargo, Rustup, Git)
 description: 记录各种包管理工具的国内镜像源 url 与设置方式
 date: 2022-05-01 13:02:36
 categories:
@@ -9,6 +9,7 @@ tags:
   - NPM
   - Cargo
   - Rustup
+  - Git
 ---
 
 # 国内镜像源(NPM, Cargo, Rustup)
