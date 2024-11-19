@@ -6,7 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "d": "hexo clean && hexo g && hexo d",
-    "serve": "hexo server",
+    "dev": "hexo server",
     "p": "git add . && git commit -m 'update' && git push -u origin master"
   },
   "hexo": {
