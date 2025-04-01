@@ -184,7 +184,7 @@ git fetch [remote-name] [branch]
 
 ```sh
 git pull
-git pull -u [remote-name] [branch] # 为还未设置远程分支的当前分支设置对应远程分支并拉取
+git branch --set-upstream-to=[remote-name]/[remote-branch] [local-branch] # 为还未设置远程分支的当前分支设置对应远程分支并拉取
 ```
 
 拉取远程分支到当前分支, 并进行自动合并
