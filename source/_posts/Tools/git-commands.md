@@ -263,6 +263,12 @@ git branch -m [old-branch-name] [new-branch-name]
 git merge [branch-name]
 ```
 
+合并时整合提交记录, 避免过多分叉
+
+```sh
+git rebase [branch-name]
+```
+
 ## Gitignore
 
 使用 npm 开源包 [ggig](https://github.com/jeffery-zhang/ggig) 可以方便的自动生成各种不同语言的 gitignore 文件

@@ -6,3 +6,4 @@ node_modules/
 public/
 _multiconfig.yml
 pnpm-lock.*
+.deploy*/
