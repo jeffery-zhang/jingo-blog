@@ -33,9 +33,16 @@ npm i -g pnpm --registry=https://registry.npmmirror.com
 npm 设置代理
 
 ```sh
-npm config set proxy http://127.0.0.1:8080
+npm config set proxy http://127.0.0.1:1080
 
-npm config set https-proxy http://127.0.0.1:8080
+npm config set https-proxy http://127.0.0.1:1080
+```
+
+npm 删除代理设置
+
+```sh
+npm config delete proxy
+npm config delete https-proxy
 ```
 
 ## PIP
