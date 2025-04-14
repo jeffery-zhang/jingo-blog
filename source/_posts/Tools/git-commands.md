@@ -200,7 +200,7 @@ git push -u [remote-name] [branch] # 为还未设置远程分支的当前分支�
 
 ```sh
 git remote rename [old-remote-name] [new-remote-name] # 重命名
-git rm remote [remote-name] # 移除
+git remote remove [remote-name] # 移除
 ```
 
 ## 标签
@@ -263,7 +263,7 @@ git branch -m [old-branch-name] [new-branch-name]
 git merge [branch-name]
 ```
 
-合并时整合提交记录, 避免过多分叉
+合并时变基, 整合提交记录, 避免过多分叉
 
 ```sh
 git rebase [branch-name]
