@@ -15,12 +15,14 @@
 
 1. axios 的封装
 2. 响应拦截器怎么封装
-3. promise 本地开发怎么实现做代理
+3. promise 本地开发怎么实现做代理 ??
 4. proxy 有什么缺陷, 如何优化
 
 ## 基础
 
 1. 什么是跨域
+2. http 协议的组成
+3. tcp 三次握手, 四次挥手
 
 ## react
 
@@ -56,3 +58,4 @@ dom 和 bom
 
 tailwind 封装主题
 Less sass 继承
+边距塌陷
