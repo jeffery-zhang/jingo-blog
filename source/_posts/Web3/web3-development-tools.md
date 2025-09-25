@@ -90,11 +90,42 @@ Remix 可以在线使用, 无需安装, 并且非常简单直观
 
 ## 开发所需技术
 
-### web3.js 和 ethers.js
+### web3.js, ethers.js, viem
 
-web3.js 专注于与区块链节点的交互, 提供了交互所需的对象和函数, Dapp 前端和链端通常会使用 web3.js 来连接以太坊网络
-ethers.js 与 web3.js 类似, 但更加轻量和易于使用, 相比于 web3.js 更受欢迎
+web3.js 是早期最受欢迎的用于与以太坊交互的 js 库, 它由 Ethereum 官方团队及社区共同维护, 通过 JSON-RPC 调用读取链上数据或发送交易
+
+ethers.js 相比 web3.js 是一个更轻量, 模块化且类型安全的 js 库, 算是 web3.js 的替代品
+
+Viem 是由 Wagmi 团队开发的较新的以太坊 RPC 客户端库, 同样轻量, 模块化且类型安全, 旨在成为 ethers.js 和 web3.js 之后更高效, 模块化的 RPC 调用解决方案
+
+| 特性       | web3.js                    | ethers.js                | viem                               |
+| ---------- | -------------------------- | ------------------------ | ---------------------------------- |
+| 诞生时间   | 较早, 较为成熟             | 较晚, 后起之秀           | 最新, 专注现代化                   |
+| 体积       | 较大                       | 轻量, 模块化设计         | 极致轻量, 按需导入                 |
+| 类型支持   | 较弱                       | 优秀的 TypeScript 支持   | 顶尖 TypeScript 支持               |
+| API 设计   | 相对复杂, 历史包袱较多     | 简洁现代, 易用           | 极简且灵活, 专注底层 RPC           |
+| 主要用途   | 全功能, 全面, 传统项目     | dApp 开发, 现代工具      | 性能优先, 构建高阶库的底层基础     |
+| 社区活跃度 | 稳定, 维护稍显缓慢         | 活跃, 更新频繁           | 新兴, 快速发展中                   |
+| 适用范围   | 兼容旧版项目, 学习门槛较高 | 新项目首选, 良好开发体验 | 高级开发者和想构建自定义框架的团队 |
 
 ### web3-react.js
 
 web3-react 是一个基于 react hooks, 提供钱包, 账户,网络,事件订阅等状态管理功能, 提供连接器(connectors)来连接多种钱包, 可以在 react 项目中快速集成登录,认证和状态同步的场景
+
+### wagmi
+
+将 viem 作为底层 RPC 驱动, 且基于 react 封装的 react hooks 库, 是现在 React Dapp 开发首选工具
+
+主要特点
+
+- React Hooks: 提供便捷的 hooks, 如 useAccount, useConnect, useContractRead, useContractWrite, 极大提升开发体验
+- 钱包连接支持: 内置对 MetaMask, WalletConnect, Coinbase Wallet 等多钱包接入支持
+- 基于 Viem: 以 Viem 作为底层 RPC 客户端, 享受其类型安全和性能优势
+- 封装繁琐接口, 优雅管理异步状态, 错误处理和缓存
+- 与 React 生态兼容: 可以轻松结合 React Query, Zustand 等状态管理及查询库
+
+## rainbowkit
+
+rainbowkit 是一个 react 组件库, 专注于为以太坊 dApp 提供漂亮且用户友好的钱包连接体验, 能够极大地简化钱包集成过程
+
+rainbowkit 是构建在 wagmi 之上的 UI 库, 它通过 wagmi 提供的 react hooks 来管理钱包, 账户, 状态等
