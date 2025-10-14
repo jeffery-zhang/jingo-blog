@@ -114,7 +114,7 @@ export default buildModule("HelloWorldModule", (m) => {
 });
 ```
 
-使用 hardhat 提供的 keystore 为部署工具提供 sepolia rpc url 和编译后创建的 dapp 私钥的环境变量
+使用 hardhat 提供的 keystore 为部署工具提供 sepolia rpc url 和你的账户私钥的环境变量
 
 ```sh
 pnpm hardhat keystore set SEPOLIA_RPC_URL
@@ -146,7 +146,7 @@ const publicClient = await viem.getPublicClient();
 // 根据地址获取合约
 const contract = await viem.getContractAt(
   "HelloWorld",
-  "0x17e0581484fe2d3e21a6f751c87ec0d7b07cc615",
+  "YOUR_CONTRACT_ADDRESS",
   {
     client: {
       public: publicClient,
