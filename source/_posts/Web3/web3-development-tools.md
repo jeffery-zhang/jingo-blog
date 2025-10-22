@@ -63,7 +63,7 @@ G[预言机] --> |提供辅助数据|E
 
 Metamask 是一个浏览器插件, 大部分主流浏览器都能安装使用
 
-[如何用 metamask 创建你的 web3 身份](https://zhj13.top/2022/04/15/Web3/create-web3-identity/)
+[如何用 metamask 创建你的 web3 身份](https://blog.zhj13.top/2022/04/15/Web3/create-web3-identity/)
 
 ### Ganache 个人区块链
 
