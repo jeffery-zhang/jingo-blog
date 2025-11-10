@@ -18,9 +18,8 @@ tags:
 
 ## NPM
 
-```sh
-https://registry.npmmirror.com
-```
+官方源: [https://registry.npmjs.org](https://registry.npmjs.org)
+镜像源: [https://registry.npmmirror.com](https://registry.npmmirror.com)
 
 ```sh
 npm config set registry https://registry.npmmirror.com
