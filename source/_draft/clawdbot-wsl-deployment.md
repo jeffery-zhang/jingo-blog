@@ -18,9 +18,19 @@
 
 - 重启
 
+如果有需要 wsl 可以重装到非 C 盘(如 D 盘)
+
+- 打包到 D 盘: wsl --export Ubuntu D:\ProgramFiles\WSL\Ubuntu\Ubuntu.tar
+- 卸载 Ubuntu: wsl --unregister Ubuntu
+- 执行: wsl -l -v, 查看是否卸载成功
+- 用 tar 包重新安装: wsl --import Ubuntu D:\ProgramFiles\WSL\Ubuntu D:\ProgramFiles\WSL\Ubuntu\Ubuntu.tar --version 2
+- 执行: wsl -l -v, 查看是否重装成功
+- 重新进入 wsl, 输入: df -h /, 查看是否已移动到 D 盘
+
 启动 wsl
 
 - 配置本地代理
 - - ip route show | grep -i default | awk '{ print $3}' 获取本机 ip
 - - export all_proxy = "protocal + ip + port"
-- - 写入 ~/.bashrc
+- - 将上一段命令写入系统配置文件: nano ~/.bashrc, 添加到文件尾部
+- - 执行: curl -s ipinfo.io, 查看 ip 地址是否变化
