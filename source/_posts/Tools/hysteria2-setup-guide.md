@@ -57,7 +57,7 @@ sudo ./install.sh
 
 - **端口号**: 20000 (UDP)
 - **协议**: Hysteria2
-- **密码**: b49cdde1dda21008
+- **密码**: pwd
 - **SNI**: www.google.com
 
 ### 5. 防火墙设置
@@ -93,13 +93,13 @@ sudo systemctl restart sh
 #### IPv4 连接地址:
 
 ```
-hy2://b49cdde1dda21008@72.61.249.205:20000?insecure=1&sni=www.google.com#HY2
+hy2://pwd@xx.xx.xx.xx:20000?insecure=1&sni=www.google.com#HY2
 ```
 
 #### IPv6 连接地址:
 
 ```
-hy2://b49cdde1dda21008@[2a02:4780:12:5b4::1]:20000?insecure=1&sni=www.google.com#HY2-V6
+hy2://pwd@[xx:xx:xx:xx::1]:20000?insecure=1&sni=www.google.com#HY2-V6
 ```
 
 ## 故障排除
