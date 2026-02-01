@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\n发布文章：在 WSL 上部署 Clawdbot 完整指南\n\n- 完善和丰富 clawdbot-wsl-deployment 文档内容\n- 添加详细的步骤说明和技术细节\n- 补充常见问题排查章节\n- 添加完整的 frontmatter 元数据\n- 将文章从草稿移至正式发布目录\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
