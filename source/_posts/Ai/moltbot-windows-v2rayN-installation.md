@@ -1,3 +1,21 @@
+---
+title: 墙内使用 v2rayN 配置虚拟网卡并安装 Moltbot/Clawdbot 到 Windows
+date: 2026-01-30 12:00:00
+updated: 2026-01-30 12:00:00
+tags:
+  - v2rayN
+  - Moltbot
+  - Clawdbot
+  - Telegram
+  - TUN 模式
+  - Windows
+  - 代理
+  - sing-box
+categories:
+  - AI
+description: 详细介绍在 Windows 环境下使用 v2rayN 开启 TUN 模式配置虚拟网卡，并成功安装部署 Moltbot/Clawdbot 与 Telegram 机器人集成的完整流程。
+---
+
 # 墙内使用 v2rayN 配置虚拟网卡并安装 moltbot/clawdbot 到 windows
 
 ## 使用 tun 模式启动 gateway

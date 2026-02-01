@@ -5,12 +5,13 @@ updated: 2026-02-01 12:00:00
 tags:
   - WSL
   - Clawdbot
+  - Moltbot
+  - Openclaw
   - Telegram
   - Bot
   - Linux
 categories:
-  - 技术教程
-  - AI 工具
+  - AI
 description: 详细记录在 Windows WSL 环境中安装配置 Clawdbot（Moltbot）并与 Telegram 集成的完整流程，包括 WSL 安装、虚拟化配置、磁盘迁移和代理设置等关键步骤。
 ---
 
@@ -61,6 +62,7 @@ APIC 虚拟化
 ```
 
 如果虚拟化未启用，需要进入 BIOS/UEFI 设置界面，找到并启用以下选项（不同主板名称可能略有差异）：
+
 - Intel CPU：Intel VT-x / Intel Virtualization Technology
 - AMD CPU：AMD-V / SVM Mode
 
@@ -297,6 +299,7 @@ clawdbot pairing approve telegram <配对码>
 ---
 
 **参考资源**：
+
 - [WSL 官方文档](https://learn.microsoft.com/zh-cn/windows/wsl/)
 - [Moltbot 官网](https://molt.bot/)
 - [Telegram Bot API 文档](https://core.telegram.org/bots/api)
